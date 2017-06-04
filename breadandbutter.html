@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/breadandbutter.css">
+	
+	<title>Bread and Butter Layout + Holy Grail</title>
+
+</head>
+<body id="body" class="vert viewport">
+    <!-- add a jQuery button-->
+    <!-- bread butter and holy grail = bbhg -->
+	<section id="bbhg" class="full-height">
+        <header>BREAD AND BUTTER + HOLY GRAIL</header>
+        <main class="horizontal space-between">
+            <nav>Nav</nav>
+            <article id="toggle-btn">CLICK HERE TO CHANGE LAYOUT</article>
+            <aside>aside</aside>
+        </main>
+        <footer>Bottom</footer>
+    </section>
+    <!--holy grail = hg-->
+    <section id="hg">
+        
+        <main class="horizontal space-between">
+            <nav>Nav</nav>
+            <article>HOLY GRAIL ONLY</article>
+            <aside>aside</aside>
+        </main>
+    </section>
+    <!-- bread and butter = bb -->
+	<section id="bb">
+        <header>BREAD AND BUTTER</header>
+        <main class="horizontal space-between">
+            <article>article</article>
+        </main>
+        <footer>Bottom</footer>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+    <script>
+$( "#toggle-btn" ).click(function() {
+  $( body ).toggleClass( "initial-height" );
+});
+</script>
+</body>
+</html>

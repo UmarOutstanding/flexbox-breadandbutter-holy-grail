@@ -1,0 +1,68 @@
+/* enforce verticle */
+.vert {
+    display: flex;
+    flex-direction: column;
+}
+
+/* enforce full height */
+
+html, body, .viewport {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+#bbhg, #hg, #bb {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#bbhg {
+    background: aqua;
+}
+
+#hg {
+    background: aquamarine;
+}
+
+#bb {
+    background: lightgreen;
+}
+
+/*enforce horizontal */
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+/*enforce space-between */
+.space-between {
+    justify-content: space-between;
+}
+
+/*create main holy grail */
+main {
+    flex: 1;
+}
+
+article {
+    flex: 5;
+}
+
+nav, aside {
+    flex: 1;
+}
+
+/* add some custom styles */
+header, footer, nav, article, aside {
+    border: 1px solid black;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 0.25em;
+}
+
+/* class(es) for jquery */
+.initial-height {
+            height: initial;
+        }
