@@ -1,0 +1,21 @@
+ul {padding: 0; margin: 0;}
+
+#bbhg-nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#bbhg-nav > ul > a {
+    background-color: navajowhite;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#bbhg-nav > ul > a:hover {
+    background-color: black;
+    color: white;
+}
